@@ -41,7 +41,6 @@ export const TagsInput = ({
   disabled,
   isEditOnRemove,
   beforeAddValidate,
-  onKeyUp,
   classNames,
 }: TagsInputProps) => {
   const [tags, setTags] = useState<any>(value || []);
@@ -109,7 +108,6 @@ export const TagsInput = ({
         onKeyDown={handleOnKeyUp}
         onBlur={onBlur}
         disabled={disabled}
-        onKeyUp={onKeyUp}
       />
     </div>
   );
